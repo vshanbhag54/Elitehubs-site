@@ -1297,7 +1297,18 @@
             letter-spacing: -0.03em; text-transform: uppercase;
             color: #0B0B0B; margin-bottom: 24px;
           }
-          .hero-h1 .gold { color: #D4900A; }
+          .hero-h1 .gold {
+            background: linear-gradient(90deg, #B88A00, #FFD000, #B88A00, #e6a800, #B88A00);
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+          }
+          @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 300% center; }
+          }
 
           /* Description */
           .hero-desc {
