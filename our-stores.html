@@ -48,14 +48,14 @@
     .nl.ac { color:#B88A00;border-bottom:2px solid #FFD000; }
 
     /* Hero */
-    .hero { position:relative;width:100%;min-height:72vh;background:#ffffff;overflow:hidden;display:flex;align-items:center; }
+    .hero { position:relative;width:100%;min-height:auto;background:#ffffff;overflow:hidden;display:flex;align-items:center; }
     .h-noise { position:absolute;inset:0;pointer-events:none;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.02'/%3E%3C/svg%3E");opacity:.6; }
     .h-grid { position:absolute;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(0,0,0,0.07) 1px,transparent 1px);background-size:28px 28px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent); }
     .h-glow { position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,208,0,0.18) 0%,transparent 65%);top:50%;left:-200px;transform:translateY(-50%);pointer-events:none;z-index:0; }
     .h-topbar { position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#FFD000 30%,#FFD000 70%,transparent); }
 
     /* Store sections */
-    .ss { position:relative;padding:120px 0;border-bottom:1px solid rgba(0,0,0,0.06);overflow:hidden; }
+    .ss { position:relative;padding:64px 0;border-bottom:1px solid rgba(0,0,0,0.06);overflow:hidden; }
     .ss:nth-child(odd) { background:#ffffff; }
     .ss:nth-child(even) { background:#fafafa; }
     /* Diagonal texture overlay */
@@ -67,21 +67,21 @@
     .ss-accent-r { position:absolute;right:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,transparent 0%,#FFD000 30%,#FFD000 70%,transparent 100%);opacity:.8; }
     /* Glow behind slider */
     .ss-glow { position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(255,208,0,0.1) 0%,transparent 65%);pointer-events:none;z-index:0; }
-    .snum { font-family:'Barlow Condensed',sans-serif;font-size:clamp(120px,16vw,220px);font-weight:900;line-height:1;color:rgba(0,0,0,0.04);position:absolute;right:-20px;bottom:-30px;pointer-events:none;user-select:none;letter-spacing:-0.04em; }
+    .snum { font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,10vw,140px);font-weight:900;line-height:1;color:rgba(0,0,0,0.04);position:absolute;right:-10px;bottom:-20px;pointer-events:none;user-select:none;letter-spacing:-0.04em; }
 
     /* Tag */
-    .stag { display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:999px;border:1px solid rgba(255,208,0,0.5);background:rgba(255,208,0,0.1);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#B88A00;margin-bottom:18px; }
+    .stag { display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,208,0,0.5);background:rgba(255,208,0,0.1);font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#B88A00;margin-bottom:12px; }
     .sdot2 { width:6px;height:6px;border-radius:50%;background:#FFD000;animation:pulse 2s infinite;display:inline-block; }
 
     /* Heading */
-    .sh2 { font-family:'Barlow Condensed',sans-serif;font-size:clamp(48px,6vw,80px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-0.02em;color:#0B0B0B;margin-bottom:20px; }
+    .sh2 { font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,4.5vw,58px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-0.02em;color:#0B0B0B;margin-bottom:14px; }
     .sh2 .cy { color:#B88A00; }
 
     /* Detail rows */
-    .dr { display:flex;align-items:flex-start;gap:18px;padding:18px 0;border-bottom:1px solid rgba(0,0,0,0.07); transition: background .2s; border-radius: 8px; }
+    .dr { display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid rgba(0,0,0,0.07); transition: background .2s; border-radius: 8px; }
     .dr:first-child{border-top:1px solid rgba(0,0,0,0.07);}
     .dr:hover { background: rgba(255,208,0,0.06); }
-    .di { width:44px;height:44px;border-radius:12px;flex-shrink:0;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.3);display:flex;align-items:center;justify-content:center; transition: background .2s, border-color .2s; }
+    .di { width:36px;height:36px;border-radius:10px;flex-shrink:0;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.3);display:flex;align-items:center;justify-content:center; transition: background .2s, border-color .2s; }
     .dr:hover .di { background:rgba(255,208,0,0.22); border-color:rgba(255,208,0,0.5); }
     .dl { font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(185,138,0,0.7);margin-bottom:5px; }
     .dv { font-size:14px;color:rgba(0,0,0,0.6);line-height:1.55; }
@@ -95,7 +95,7 @@
     .sw:hover { box-shadow:0 30px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(255,208,0,0.3); transform: translateY(-4px); }
     .st { display:flex;transition:transform .6s cubic-bezier(.77,0,.175,1); }
     .sli { min-width:100%; position:relative; }
-    .sli img { width:100%;height:460px;object-fit:cover;display:block; transition: transform 8s ease; }
+    .sli img { width:100%;height:380px;object-fit:cover;display:block; transition: transform 8s ease; }
     .sli.active img { transform: scale(1.04); }
     /* Cinematic gradient over image */
     .sli::after { content:''; position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 50%); pointer-events:none; }
@@ -113,7 +113,7 @@
     .ti { font-size:12px;font-weight:700;color:#0B0B0B;display:flex;align-items:center;gap:8px;justify-content:center; }
 
     /* CTA */
-    .cta { position:relative;padding:140px 0;text-align:center;overflow:hidden;background:#fafafa;border-top:1px solid rgba(0,0,0,0.06); }
+    .cta { position:relative;padding:80px 0;text-align:center;overflow:hidden;background:#fafafa;border-top:1px solid rgba(0,0,0,0.06); }
     .cta::before { content:''; position:absolute; inset:0; background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px, transparent 1px, transparent 40px); pointer-events:none; }
     .cta-g { position:absolute;width:900px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(255,208,0,0.18) 0%,transparent 65%);pointer-events:none; }
     .cta-ring { position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;border:1px solid rgba(255,208,0,0.2);pointer-events:none; }
@@ -137,10 +137,8 @@
       background-clip: text;
       animation: shimmer 4s linear infinite;
     }
-    /* Underline accent after city name */
-    .sh2-underline { display:block; width:60px; height:3px; background: linear-gradient(90deg, #FFD000, transparent); border-radius:2px; margin-top:12px; margin-bottom:24px; }
-    /* Store description */
-    .store-desc { font-size:15px;line-height:1.8;color:rgba(0,0,0,0.55);margin-bottom:36px; border-left:3px solid rgba(255,208,0,0.5); padding-left:18px; }
+    .store-desc { font-size:13px;line-height:1.7;color:rgba(0,0,0,0.55);margin-bottom:20px; border-left:3px solid rgba(255,208,0,0.5); padding-left:14px; }
+    .sh2-underline { display:block; width:48px; height:3px; background: linear-gradient(90deg, #FFD000, transparent); border-radius:2px; margin-top:8px; margin-bottom:16px; }
   </style>
 </head>
 <body>
@@ -196,38 +194,38 @@
   <div class="h-topbar"></div>
   <img src="logo-mark.png" aria-hidden="true" style="position:absolute;right:-80px;bottom:-80px;width:580px;opacity:0.04;pointer-events:none;user-select:none;">
 
-  <div class="wrap" style="position:relative;z-index:1;padding-top:80px;padding-bottom:80px;">
+  <div class="wrap" style="position:relative;z-index:1;padding-top:48px;padding-bottom:48px;">
     <div class="pill fu d1"><span class="sdot2"></span>EliteHubs Experience Zones</div>
 
-    <h1 class="fu d2" style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,11vw,150px);font-weight:900;text-transform:uppercase;line-height:.9;letter-spacing:-0.03em;color:#0B0B0B;margin-bottom:28px;">
-      OUR<br><span class="hero-title-gold">STORES</span>
+    <h1 class="fu d2" style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(54px,7vw,96px);font-weight:900;text-transform:uppercase;line-height:.9;letter-spacing:-0.03em;color:#0B0B0B;margin-bottom:16px;">
+      OUR <span class="hero-title-gold">STORES</span>
     </h1>
 
-    <p class="fu d3" style="font-size:16px;line-height:1.7;color:rgba(0,0,0,0.52);max-width:540px;margin-bottom:40px;">
+    <p class="fu d3" style="font-size:14px;line-height:1.65;color:rgba(0,0,0,0.52);max-width:500px;margin-bottom:24px;">
       Visit any of our premium showrooms across India. Try 30+ PC builds live, experience hardware hands-on, and get expert guidance before you buy.
     </p>
 
-    <div class="fu d4" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px;">
-      <a href="#bengaluru" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:13px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    <div class="fu d4" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+      <a href="#bengaluru" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:12px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         Bengaluru
       </a>
-      <a href="#pune" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:13px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <a href="#pune" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:12px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         Pune
       </a>
-      <a href="#mumbai" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:13px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <a href="#mumbai" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:rgba(255,208,0,0.12);border:1px solid rgba(255,208,0,0.35);color:#B88A00;font-size:12px;font-weight:700;text-decoration:none;transition:all .18s;" onmouseover="this.style.background='rgba(255,208,0,0.25)';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,208,0,0.12)';this.style.transform='none';">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         Mumbai
       </a>
     </div>
 
-    <div class="fu d4" style="display:flex;gap:40px;padding-top:32px;border-top:1px solid rgba(0,0,0,0.08);">
-      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;color:#0B0B0B;line-height:1;">3</div><div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:4px;">Stores</div></div>
+    <div class="fu d4" style="display:flex;gap:32px;padding-top:20px;border-top:1px solid rgba(0,0,0,0.08);">
+      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:#0B0B0B;line-height:1;">3</div><div style="font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:3px;">Stores</div></div>
       <div style="width:1px;background:rgba(0,0,0,0.08);"></div>
-      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;color:#0B0B0B;line-height:1;">30+</div><div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:4px;">Live PC Builds</div></div>
+      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:#0B0B0B;line-height:1;">30+</div><div style="font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:3px;">Live PC Builds</div></div>
       <div style="width:1px;background:rgba(0,0,0,0.08);"></div>
-      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;color:#0B0B0B;line-height:1;">10+</div><div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:4px;">Use Cases</div></div>
+      <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:#0B0B0B;line-height:1;">10+</div><div style="font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,0.38);margin-top:3px;">Use Cases</div></div>
     </div>
   </div>
 </section>
@@ -290,7 +288,7 @@
       <div style="position:relative;" class="reveal-r">
         <div class="snum">01</div>
         <div class="stag rd1 reveal"><span class="sdot2"></span>Store 01</div>
-        <h2 class="sh2 reveal rd2">BENGA<span class="cy">LURU</span></h2>
+        <h2 class="sh2 reveal rd2">BENGALURU</h2>
         <span class="sh2-underline reveal rd3"></span>
         <p class="store-desc reveal rd4">India's first Computer Showroom with over 30 PC Builds covering 10+ use cases — Gaming, Streaming, Racing Simulator, Flight Simulator, Editing, Rendering, Small Form Factor, AI &amp; ML, Game Dev and Music Production.</p>
         <div>
@@ -315,7 +313,7 @@
       <div style="position:relative;" class="reveal-l">
         <div class="snum" style="left:-10px;right:auto;">02</div>
         <div class="stag rd1 reveal"><span class="sdot2"></span>Store 02</div>
-        <h2 class="sh2 reveal rd2"><span class="cy">PUNE</span></h2>
+        <h2 class="sh2 reveal rd2">PUNE</h2>
         <span class="sh2-underline reveal rd3"></span>
         <p class="store-desc reveal rd4">Our Pune store offers a full experience zone for Custom PC Builds across use cases — Gaming, Streaming, Editing, Rendering and many more. Walk in and build your dream PC with hands-on guidance.</p>
         <div>
@@ -327,6 +325,7 @@
       </div>
       <!-- Slider -->
       <div class="sw reveal-r" style="position:relative;">
+        <div class="st" id="t-pune">
           <div class="sli"><img src="https://cdn.shopify.com/s/files/1/0591/4220/9629/files/1742832096174.jpg?v=1752762936" alt="Pune" onerror="this.src='https://images.unsplash.com/photo-1593640408182-31c228532c9e?w=900&fit=crop'"/></div>
           <div class="sli"><img src="https://cdn.shopify.com/s/files/1/0591/4220/9629/files/1742832097854.jpg?v=1752762936" alt="Pune" onerror="this.src='https://images.unsplash.com/photo-1587202372775-e0c2e4d50a4e?w=900&fit=crop'"/></div>
           <div class="sli"><img src="https://cdn.shopify.com/s/files/1/0591/4220/9629/files/1742832098195.jpg?v=1752762936" alt="Pune" onerror="this.src='https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=900&fit=crop'"/></div>
@@ -366,7 +365,7 @@
       <!-- Info -->
       <div style="position:relative;" class="reveal-r">
         <div class="stag rd1 reveal"><span class="sdot2"></span>Store 03</div>
-        <h2 class="sh2 reveal rd2">MUM<span class="cy">BAI</span></h2>
+        <h2 class="sh2 reveal rd2">MUMBAI</h2>
         <span class="sh2-underline reveal rd3"></span>
         <p class="store-desc reveal rd4">Our flagship Mumbai store is a full Experience Zone for PC Builds and Peripherals. Clients can try out hardware before purchasing. We're actively expanding our product range at this location.</p>
         <div>
